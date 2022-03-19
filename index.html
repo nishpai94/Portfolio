@@ -1,101 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--
-      This is the page head - it contains info the browser uses to display the page
-      You won't see what's in the head in the page
-      Scroll down to the body element for the page content
-    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling around the world</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-    <title>Hello World!</title>
-
-    <!-- Meta tags for SEO and social sharing -->
-    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
-    <meta
-      name="description"
-      content="A simple website, built with Glitch. Remix it to get your own."
-    />
-    <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Hello World!" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
-    <meta
-      property="og:description"
-      content="A simple website, built with Glitch. Remix it to get your own."
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
-    />
-    <meta name="twitter:card" content="summary" />
-
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- Import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <!--
-      This is the body of the page
-      Look at the elements and see how they appear in the rendered page on the right
-      Each element is defined using tags, with < and > indicating where each one opens and closes
-      There are elements for sections of the page, images, text, and more
-      The elements include attributes referenced in the CSS for the page style
-    -->
-
-    <!-- The wrapper and content divs set margins and positioning -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <!-- This is the start of content for our page -->
-        <h1 class="title">Hello World!</h1>
-
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <!-- Instructions on using this project -->
-        <div class="instructions">
-          <h2>
-            Using this project
-          </h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out README.md in the editor for
-            more info and next steps you can take!
-          </p>
-          <!-- ADD BUTTON HERE -->
-          
-          <!-- Once you've added the button from the readme, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
-        </div>
+  <nav class="navbar navbar-expand-sm navbar-dark" aria-label="Third navbar example">
+   <div class="container-fluid">
+      <img src="https://cdn.glitch.global/e6b2a219-6c3a-495f-b9c7-268f9533c494/around-the-world.png?v=1647705729397" width="50px" alt="">
+      <a class="navbar-brand" href="#">Traveling around the world</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse p-2" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">ABOUT US</a>
+          </li>               
+          <li class="nav-item">
+            <a class="nav-link active" href="#prices">Prices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#reviews">Customer Reviews</a>
+            </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
-  </body>
+  </nav>
+
+
+
+<div class="col-md-12 mt-1">
+  <div class="mu-about-area">
+              <img class="about-us-left col-md-12" src="https://cdn.glitch.global/e6b2a219-6c3a-495f-b9c7-268f9533c494/about-us-img.jpg?v=1647705821707" alt="website template image" width="100%">
+<section id="about">            
+              <div class="col-md-12 ms-1 mt-3">
+                <div class="about-us-right">
+                  <h2 class="about">About Our Agency</h2>
+                  <p>We started own company Traveling around the world in 2003. Since then we gained experience, learned ins and outs of the industry. We continue growing and never stop learning in fact the more we achieve the more passionate about our tours we become. 
+                    <br>
+                    <br>
+                  We promise to you: whether you order economy, medium range or luxury tour at own agency Traveling around the world you will get the best industry has available in that range.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mt-5">
+              <div class="mu-why-us-area">
+                <h2>Why Us?</h2>
+                <div class="mu-why-us-content">
+                  <div class="row">
+                    <div class="col-md-4 mt-4">
+                      <div class="mu-why-us-single">
+                        <div class="my-why-us-single-icon mt-3 mb-5">🛏<i class="fa fa-bed" aria-hidden="true"></i></div>
+                        <h3>Luxurious Hotels</h3>
+                        <p>Leave the routine behind and get ready to spend an unforgettable vacation in one of our hotels. Let time stand still, forget your worries and dedicate yourself to relaxation and enjoyment.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                      <div class="mu-why-us-single">
+                        <div class="my-why-us-single-icon mt-3 mb-5">👍<i class="fa fa-thumbs-up" aria-hidden="true"></i></div>
+                        <h3>The Best Service</h3>
+                        <p>Travel safely with us - we take care of you before, during and after your vacation!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                      <div class="mu-why-us-single">
+                        <div class="my-why-us-single-icon mt-3 mb-5">🛫<i class="fa fa-plane" aria-hidden="true"></i></div>
+                        <h3>Unique Experience</h3>
+                        <p>Travel to popular destinations. Try something new or go back to a familiar one. 
+                        We organize your days, using the experience of tradition and relaxation, between a hike and a tasting of typical products.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mu-video">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mu-video-area mt-5">
+                <h2>Watch Our Recent Trip Video</h2>
+                <br>
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/58K5QL0x6Zo" title="YouTube video" allowfullscreen></iframe>
+                </div>               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!--   -->
+<section id="prices">
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center mt-2">
+  <h2>Our Featured Tours</h2>
+</div>
+  <div class="row row-cols-1 text-center ms-1">
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0">Abu Dhabi</h4>
+      </div>
+      <div class="card-body">
+        <div class="mu-featured-tours-single">
+          <img class="pricing-card" src="https://cdn.glitch.global/e6b2a219-6c3a-495f-b9c7-268f9533c494/dubai.jpg?v=1647705908385" alt="Dubai">
+        <h1 class="card-title pricing-card-title">$3600</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>4 Days, 3 Nights</li>
+          <li></li>
+        </ul>
+        <p>When it comes to indulgent pampering and once-in-a-lifetime holiday experiences, you’re spoilt for choice with Abu Dhabi’s luxury destinations. Many five-star hotels and resorts offer gourmet gastronomy, private island retreats, palatial splendour in the desert, the ultimate in glamping, as well as the highest of high teas and the most thrilling F1™ action.</p>
+        <button type="button" class="w-80 btn btn-lg">Book Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0">Thailand</h4>
+      </div>
+      <div class="card-body">
+        <div class="mu-featured-tours-single">
+          <img class="pricing-card" src="https://cdn.glitch.global/e6b2a219-6c3a-495f-b9c7-268f9533c494/thailand.jpg?v=1647705968405" alt="Dubai">
+        <h1 class="card-title pricing-card-title">$6300</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>10 Days, 9 Nights</li>
+          <li></li>
+        </ul>
+        <p>Thailand is a breathtaking Southeast Asian country that is filled with diverse offerings. It has beaches, temples, high-end shopping districts, excellent dining spots, and so many more. Tourists will surely never run out of things to do in the Land of Smiles. If you are planning a trip to this side of Asia, use this list of the most unique experiences you must have in Thailand.</p>
+        <button type="button" class="w-80 btn btn-lg">Book Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0">France</h4>
+      </div>
+      <div class="card-body">
+        <div class="mu-featured-tours-single">
+          <img class="pricing-card" src="https://cdn.glitch.global/e6b2a219-6c3a-495f-b9c7-268f9533c494/france.jpg?v=1647706026896" alt="Dubai">
+        <h1 class="card-title pricing-card-title">$1200</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>2 Days, 3 Nights</li>
+          <li></li>
+        </ul>
+        <p>One of the world's most popular travel destinations, France is the land of love, fine wine, gratifying gastronomy and landmarks that feature on pretty much every bucket list. If you haven't been to France, so they say, you haven't lived.</p>
+        <button type="button" class="w-80 btn btn-lg">Book Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0">Switzerland</h4>
+      </div>
+      <div class="card-body">
+        <div class="mu-featured-tours-single">
+          <img class="pricing-card" src="https://cdn.glitch.global/e6b2a219-6c3a-495f-b9c7-268f9533c494/switzerland.jpg?v=1647706096210" alt="Dubai">
+        <h1 class="card-title pricing-card-title">$5300</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>4 Days, 3 Nights</li>
+          <li></li>
+        </ul>
+        <p>The slowest, yet the most scenic train route in the world. Glacier express connects two major mountain resorts of St. Moritz and Zermatt in the Swiss Alps. You won’t get bored during 7.5 hour journey as you tour over 291 bridges, through 91 tunnels and across the Oberalp Pass on the highest point at 2,033m while watching (and snapping) breathtaking alpine landscapes outside the window.</p>
+        <button type="button" class="w-80 btn btn-lg">Book Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0">Italy</h4>
+      </div>
+      <div class="card-body">
+        <div class="mu-featured-tours-single">
+          <img class="pricing-card" src="https://cdn.glitch.global/e6b2a219-6c3a-495f-b9c7-268f9533c494/italy.jpg?v=1647706154761" alt="Dubai">
+        <h1 class="card-title pricing-card-title">$3200</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>6 Days, 5 Nights</li>
+          <li></li>
+        </ul>
+        <p>The birthplace of the Roman Empire and the Renaissance, it’s not surprising that Italy has a huge cultural heritage and should be so rich in masterpieces of art and architecture, but that’s not what all Italy can offer. On top of it, this beautiful country is blessed with stunning nature, such as beaches, lakes, mountains - all in one pack. Ready to have some unique experiences in Italy?</p>
+        <button type="button" class="w-80 btn btn-lg">Book Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0">England</h4>
+      </div>
+      <div class="card-body">
+        <div class="mu-featured-tours-single">
+          <img class="pricing-card" src="england.jpg" alt="Dubai">
+        <h1 class="card-title pricing-card-title">$2300</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>4 Days, 3 Nights</li>
+          <li></li>
+        </ul>
+        <p>The United Kingdom has so much to offer for locals and tourists, and we’re not just talking about sites in London. There are national parks, museums, festivals, and food that make up a truly unique U.K. experience. Check out these travel experiences in the U.K. and immerse yourself in their historical culture.</p>
+        <button type="button" class="w-80 btn btn-lg">Book Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section> 
+<br>
+<!--     -->
+<section id="reviews">
+  <div class="d-flex justify-content-center">  
+    <h2>What Our Travelers Says</h2>
+  </div>
+  <div class="row ms-7 mt-5">
+      <div class="col-lg-4">
+        <img class="w-50" src="traveler-1.jpg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveaspectratio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+        <h5 class="mu-rt-name mt-3">Anna Pavlova</h5>
+        <h6 class="mu-rt-name align-items-end">Moscow, Russia</h6>              
+        <p>We enjoyed our trip very much. The accommodations in each town were fantastic. TAW took care of all the details and made the trip very smooth and easy. Thank you!!</p>
+      </div>
+      <div class="col-lg-4">
+        <img class="w-50" src="traveler-2.jpg" class="bd-placeholder-img rounded-circle" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveaspectratio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+        <h5 class="mu-rt-name mt-3">Carlos Pereira</h5>
+        <h6 class="mu-rt-name align-items-end">Algarve, Portugal</h6>              
+        <p>Our touring holiday was prepared and booked for us, saving time and effort. I would not hesitate to use TAW again!</p>
+      </div>
+      <div class="col-lg-4">
+        <img class="w-50" src="pex.jpg" class="bd-placeholder-img rounded-circle" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveaspectratio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+        <h5 class="mu-rt-name mt-3">Alice Boga</h5>
+        <h6 class="mu-rt-name align-items-end">Zurich, Switzerland</h6>     
+        <p>My family enjoys traveling with TAW deals! If you want terrific customer service and a vacation to make all your other vacations jealous; you should use TAW! I promise you won't regret it!</p>
+      </div>
+    </div>
+  </section>
+  
+<!-- Carousel  -->
+ <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="maldives.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="roma.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="lisbon.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="paris.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="lofoten.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="amsterdam.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+<br>
+
+<!--    -->
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mt-5">
+              <div class="mu-contact-area">
+                <h2>Contact Us</h2>
+                <div class="mu-contact-content">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="mu-contact-form-area">
+                        <div id="form-messages"></div>
+                        <form id="ajax-contact" method="post" action="#" class="mu-contact-form">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Subject" id="subject" name="subject" required>
+                          </div>
+                          <div class="form-group">
+                            <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+                          </div>
+                               <button type="button" class="submit btn btn-light mt-5">Send Message</button>
+                              
+                              </form>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!--     -->
+      <div id="mu-google-map">
+      <iframe src="" frameborder="0"></iframe>  
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b4987350890b76b68f9fd82e0d2bae9ec4faea2235679bfa8e690f6b49279bb&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+    </main>
+ 
+<!--     -->
+    <footer id="mu-footer">
+      <div class="container">
+        <div class="mu-footer-area">
+          <div class="row">
+            <div class="col-md-6 mt-5">
+              <div class="mu-footer-left">                
+              <p class="mu-copy-right">&copy; Copyright <a target="_blank" href="почта">Irina Gysland</a>. All rights reserved.</p> 
+            </div>
+            </div>       
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md text-start ms-4 bg-darck mb-2">
+              <a href="https://www.instagram.com/irina_akvarell_n/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                </svg>
+                </a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </footer>   
+</body>
 </html>
