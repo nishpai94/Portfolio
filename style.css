@@ -146,3 +146,13 @@ label {
     border: none;
     padding: 12px 60px;
 }
+
+.Venice_attraction-list {
+  list-style-image: linear-gradient(to left bottom, red, blue);
+  font-size: 15px;
+  text-align: inherit;
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #333333;
+}
