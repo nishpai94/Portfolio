@@ -47,6 +47,7 @@ h5,
 h6 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
+  text-align: left;
 }
 
 .my-why-us-single-icon {
@@ -97,14 +98,9 @@ p {
     rgba(11, 23, 146, 1) 100%
   );
   color: white;
-  min-width: 50%;
+  min-width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
-}
-
-.w-80:hover {
-  background: rgb(208, 255, 0);
-  color: rgb(253, 62, 72);
 }
 
 .submit {
@@ -127,12 +123,6 @@ p {
   border-radius: 20px;
   cursor: pointer;
   text-transform: uppercase;
-}
-
-.submit:hover {
-  background: rgb(208, 255, 0);
-  color: rgb(253, 62, 72);
-  font-weight: 800;
 }
 
 .card-body {
@@ -189,7 +179,7 @@ label {
   list-style-image: linear-gradient(to left bottom, green, blue);
   font-size: 15px;
   text-align: inherit;
-  width: 30%;
+  width: 20%;
   margin: 0 auto;
   font-family: "Comic Sans MS", cursive, sans-serif;
   color: #333333;
