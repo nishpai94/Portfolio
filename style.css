@@ -174,11 +174,22 @@ label {
 .attraction-list {
   list-style-image: linear-gradient(to left bottom, green, blue);
   font-size: 22px;
-  text-align: inherit;
+  text-align: left;
   max-width: 40%;
   margin: 0 auto;
   font-family: 'PT Sans Narrow', sans-serif;
   color: #333333;
+}
+
+.mainpage_title {
+  color: #ffffff;
+  font-family: cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+  /*margin: 0;*/
+  padding-top: 150px;
 }
 
 footer {
