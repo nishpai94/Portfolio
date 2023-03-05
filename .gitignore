@@ -1,0 +1,3 @@
+#ignore mac realted files
+
+*.DS_Store
