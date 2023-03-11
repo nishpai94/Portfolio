@@ -1,0 +1,100 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+
+// To do:
+//   1. Run samples/CreateFunctions.usql to define functions before running this script
+//   2. Replace <AzureStorageAccount> with your Azure Storage account containing MAG dataset
+//   3. Replace <MagContainer> with the container name in Azure Storage account containing MAG dataset, usually in the form of mag-yyyy-mm-dd
+//
+
+DECLARE @blobAccount     string = "magdatapittnvp";
+DECLARE @blobContainer   string = "ma-datashare";
+DECLARE @uriPrefix       string = "wasb://" + @blobContainer + "@" + @blobAccount + "/mag/2021-11-08/";
+
+//Change this variable to do calculation for different conferences
+DECLARE @paperType string = "pathology";
+
+
+                                  
+//*******************Constant Variable Section*****************************
+//        Defining const variables to be used by other parts of the script
+//*************************************************************************
+//This output path pattern is hardcoded to the pbi file. If this is changed, the pbi file needs to be modified as well
+DECLARE @conferenceAnalyticsBaseDir string = @"/output/Pathology";
+DECLARE @outputBaseDir string = @conferenceAnalyticsBaseDir + "/";
+//DECLARE @maDetailPagePrefix = @"https://academic.microsoft.com/paper/";
+//DECLARE @lastYear int = DateTime.Today.Year - 1;
+
+//*************************Ouptut Section**********************************
+//                 All output files for this script.
+//*************************************************************************
+DECLARE @conferenceTopPapersOutPath string = @outputBaseDir + "topPapers.tsv";
+
+
+// Load Academic Graph data
+//@conferenceSeries = ConferenceSeries(@uriPrefix);
+@papers = Papers(@uriPrefix);
+@paperFieldsOfStudy = PaperFieldsOfStudy(@uriPrefix);
+@fieldsOfStudy = FieldsOfStudy(@uriPrefix);
+@confereceInstances = ConferenceInstances(@uriPrefix);
+
+
+
+
+//Get Papers
+@papers = 
+    SELECT @papers.PaperTitle,
+           @papers.PaperId,
+           @papers.Year,
+           @papers.EstimatedCitation, 
+           @papers.ConferenceSeriesId AS VenueId,
+           @papers.CitationCount,
+           @papers.ConferenceInstanceId
+
+    FROM @papers;
+
+@fieldsOfStudy =
+    SELECT @fieldsOfStudy.FieldOfStudyId, @fieldsOfStudy.NormalizedName
+    FROM @fieldsOfStudy;
+
+@confereceInstances = 
+    SELECT  (long?) ConferenceInstanceId AS ConferenceInstanceId, @confereceInstances.Location, @confereceInstances.Latitude, @confereceInstances.Longitude
+    FROM @confereceInstances;
+
+
+
+@pathologyPapers = 
+    SELECT @papers.PaperTitle,
+           @papers.Year,
+           @papers.EstimatedCitation,
+           @confereceInstances.Location,
+           @confereceInstances.Longitude,
+           @confereceInstances.Latitude,
+           @papers.CitationCount
+    FROM   @papers
+    INNER JOIN @paperFieldsOfStudy ON @paperFieldsOfStudy.PaperId == @papers.PaperId
+    INNER JOIN @fieldsOfStudy      ON @fieldsOfStudy.FieldOfStudyId == @paperFieldsOfStudy.FieldOfStudyId
+    INNER JOIN @confereceInstances ON @papers.ConferenceInstanceId == @confereceInstances.ConferenceInstanceId
+    WHERE @fieldsOfStudy.NormalizedName == "pathology";
+
+
+
+
+
+@pathologyPapers = 
+SELECT  @pathologyPapers.PaperTitle,
+        @pathologyPapers.Year,
+        @pathologyPapers.EstimatedCitation,
+        @pathologyPapers.Location,
+        @pathologyPapers.Longitude,
+        @pathologyPapers.Latitude,
+        @pathologyPapers.CitationCount
+    FROM @pathologyPapers;
+
+
+
+
+
+OUTPUT @pathologyPapers
+TO @conferenceTopPapersOutPath
+USING Outputters.Tsv(outputHeader : true);
