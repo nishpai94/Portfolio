@@ -68,7 +68,7 @@
               <span class="sr-only">Toggle navigation</span> Menu
               <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="#page-top">Nischita Pai</a>
+            <a class="navbar-brand" href="../../index.html">Nischita Pai</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -78,7 +78,7 @@
           >
             <ul class="nav navbar-nav navbar-right">
               <li class="hidden">
-                <a href="#page-top"></a>
+                <a href="../../index.html"></a>
               </li>
 
               <!-- Nav bar contents -->
@@ -104,68 +104,73 @@
     <br />
     <br />
 
-    <section class="c12 intro">
+    <section class="center12 intro">
      <!-- <h1 class="fa">
          Citations   in   Pathology
       </h1>  -->
        <h1 class="intro-title fa">
          Citations in Pathology
       </h1>
-      <h2 class="intro-details">
+      <h2 class="intro-desc">
         Visualizations of citation counts of top Pathology papers created with
         Jupyter Notebook
       </h2>
       <h3>Jupyter Notebook</h3>
-      <!-- TODO - To add Github link -->
-      <a href="" class="icon" target="_blank"
+      
+      <a href="https://github.com/nishpai94/Portfolio/tree/master/Portfolio/Patho_citations" class="icon" target="_blank"
         ><i class="icon-margin fa fa-github fa-3x" aria-hidden="true"></i
       ></a>
     </section>
 
-    <main class="c8-center bnb">
-      <div class="slides-container">
-        <iframe
-          src="https://drive.google.com/file/d/1QbrSdnA9JWp9WXYBX_CJO_QXn1GqSGJJ/preview"
-          width="500"
-          height="375"
-        ></iframe>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <div class="slides-container">
+            <iframe style="position: absolute; top: 0; left: 0; width: 80%; height: 80%; margin-left:10%; margin-right:10%;
+              margin-bottom: 0px; display:block; border: none;"
+              src="https://drive.google.com/file/d/1QbrSdnA9JWp9WXYBX_CJO_QXn1GqSGJJ/preview"
+              width="500"
+              height="375"
+            ></iframe>
+          </div>
+
+          <h3 id="contents" style="margin-left:10%; margin-right:10%;">Overview</h3>
+          <p style="margin-left:10%; margin-right:10%;">
+            During Information Visualization course at Pitt, I worked on a final
+            project where I visualized the data of paper citation counts of top
+            Pathology papers across the World in the form of bubble map, bubble
+            chart and circular bar plot (shown in the pdf doc above). The main
+            purpose of this project corresponds to discover which part of the world
+            does the most number of citations of papers arise from and which city
+            exactly has engendered these many citations over the past 36 years
+            (1985-2021).
+          </p>
+
+          <h3 style="margin-left:10%; margin-right:10%;">Tech Stack</h3>
+          <ul class="list" style="margin-left:10%; margin-right:10%;">
+            <li>
+              I have created the visualizations using a web based interactive
+              computing platform - Jupyter Notebook. I collected raw datasets of
+              citation counts of the Pathology papers from Microsoft Academic Graph
+              (MAG) Dataset with the help of a USQL script written on Microsoft Azure
+              Portal (MAP).
+            </li>
+            <li>
+              Visualized this data with the help of several figures such as
+              bubble maps and and circular bar-plots using Plotly and
+              Matplotlib library packages in Python/Jupyter notebook.
+            </li>
+          </ul>
+        
+          <h3 style="margin-left:10%; margin-right:10%;">Timeline</h3>
+          <p style="margin-left:10%; margin-right:10%;">October to December 2021 (2 months)</p>
+
+          <hr style="margin-left:10%; margin-right:10%;"/>
+        </div>
       </div>
+    </div>
 
-      <h3>Overview</h3>
-      <p>
-        During Information Visualization course at Pitt, I worked on a final
-        project where I visualized the data of paper citation counts of top
-        Pathology papers across the World in the form of bubble map, bubble
-        chart and circular bar plot (shown in the pdf doc above). The main
-        purpose of this project corresponds to discover which part of the world
-        does the most number of citations of papers arise from and which city
-        exactly has engendered these many citations over the past 36 years
-        (1985-2021).
-      </p>
-
-      <h3>Tech Stack</h3>
-      <ul class="list">
-        <li>
-          I have created the visualizations using a web based interactive
-          computing platform - Jupyter Notebook. I collected raw datasets of
-          citation counts of the Pathology papers from Microsoft Academic Graph
-          (MAG) Dataset with the help of a USQL script written on Microsoft Azure
-          Portal (MAP).
-        </li>
-        <li>
-          Visualized this data with the help of several figures such as
-          bubble maps and and circular bar-plots using Plotly and
-          Matplotlib library packages in Python/Jupyter notebook.
-        </li>
-      </ul>
-    
-      <h3>Timeline</h3>
-      <p>October to December 2021 (2 months)</p>
-
-      <hr />
-    </main>
-
-    <footer class="c12">
+    <footer class="center12">
       <div class="social-media">
         <h3>
           <a href="mailto:nvp15@pitt.edu">EMAIL</a>
@@ -186,12 +191,12 @@
           >
         </h3>
       </div>
-      <p class="small-footer-text">
+      <p class="footer-text">
         Made with HTML, CSS and ❤️ by Nischita Pai
       </p>
-      <p class="small-footer-text">&copy; 2023</p>
+      <p class="footer-text">&copy; 2023</p>
     </footer>
-    
+
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-2.2.1.min.js"

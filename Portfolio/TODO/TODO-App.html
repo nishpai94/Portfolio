@@ -68,7 +68,7 @@
               <span class="sr-only">Toggle navigation</span> Menu
               <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="#page-top">Nischita Pai</a>
+            <a class="navbar-brand" href="../../index.html">Nischita Pai</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -78,7 +78,7 @@
           >
             <ul class="nav navbar-nav navbar-right">
               <li class="hidden">
-                <a href="index.html #page-top"></a>
+                <a href="index.html"></a>
               </li>
 
               <!-- Nav bar contents -->
@@ -104,19 +104,18 @@
     <br />
     <br />
   
-    <section class="c12 intro">
+    <section class="center12 intro">
       <!-- <i class="fa fa-tasks" style="font-size: 18px"></i>  -->
       <h1 class="fa">📝 Task Hero</h1>
       <!-- <h1 class="intro-title">📝 Task Hero</h1>  -->
-      <h2 class="intro-details">
+      <h2 class="intro-desc">
         To-Do App with Sign-in feature built with Material UI and the MERN tech
         stack (MongoDB, Express, React, Node.js)
       </h2>
 
       <h3>Glitch</h3>
 
-      <!-- TODO: Insert github link -->
-      <a href="" target="_blank"
+      <a href="https://github.com/nishpai94/react-todo-frontend" target="_blank"
         ><i class="icon-margin fa fa-github fa-3x" aria-hidden="true"></i
       ></a>
       <a
@@ -130,19 +129,22 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-6">
-          <div class="slides-container">
-            <iframe
+          <div class="slides-container"> 
+            <iframe style="position: absolute; top: 0; left: 0; width: 80%; height: 80%; margin-left:10%; margin-right:10%;
+              margin-bottom: 0px; display:block; border: none;"
               src="https://docs.google.com/presentation/d/e/2PACX-1vQl7dC7vmaWXfhITHefGXDluirNPVH6RbYaYwR3qjUnKAHLhoAnB3y6EDciJJdw8ywlCTPwoLT8K_i3/embed?start=false&loop=false&delayms=3000"
               frameborder="0"
-              width="800"
-              height="400"
+              width="200"
+              height="200"
               allowfullscreen="true"
               mozallowfullscreen="true"
               webkitallowfullscreen="true"
             ></iframe>
           </div>
-          <h3>Overview</h3>
-          <p>
+          
+          <div>
+          <h3 id="contents" style="margin-left:10%; margin-right:10%;">Overview</h3>
+          <p style="margin-left:10%; margin-right:10%;">
             For Network and Web Data technologies course, my final project was
             with a group of 4 students, where the goal of this project was to
             create a To-Do App with sign-in feature with CRUD functionalities
@@ -152,17 +154,17 @@
             database and they were mainly - 'Users' and 'Tasks'.
           </p>
 
-          <ul class="list">
+          <ul class="list" style="margin-left:10%; margin-right:10%;">
             <li>Users: Users._id, username, emailId, password</li>
             <li>Tasks: Tasks._id, task, userid</li>
           </ul>
 
-          <p>
+          <p style="margin-left:10%; margin-right:10%;">
             The key users were 'admin' and 'users'. Following are the features
             available to the users:
           </p>
 
-          <ul class="list">
+          <ul class="list" style="margin-left:10%; margin-right:10%;">
             <li>Create a task: User can add a task</li>
             <li>
               Read a task: Existing task list is displayed when the user is
@@ -175,9 +177,9 @@
             <li>Delete a task: Tasks can be deleted as well by the user</li>
           </ul>
 
-          <p>We mainly built 4 components for this project:</p>
+          <p style="margin-left:10%; margin-right:10%;">We mainly built 4 components for this project:</p>
 
-          <ol class="list">
+          <ol class="list" style="margin-left:10%; margin-right:10%;">
             <li>
               User web app - To ensure security and privacy of data of each user
               this app needs each user to first login to the app. Any user can
@@ -199,8 +201,8 @@
             </li>
           </ol>
 
-          <h3>Tech Stack</h3>
-          <p>
+          <h3 style="margin-left:10%; margin-right:10%;">Tech Stack</h3>
+          <p style="margin-left:10%; margin-right:10%;">
             The To-do user app is built with React JS framework on the frontend
             and Node.js for the backend. The API uses Express as a back-end web
             application framework for Node.js and connects to a MongoDB
@@ -210,25 +212,30 @@
             Glitch.
           </p>
 
-          <h3>Timeline</h3>
-          <p>October to December 2022 (~2 months)</p>
+          <h3 style="margin-left:10%; margin-right:10%;">Timeline</h3>
+          <p style="margin-left:10%; margin-right:10%;">October to December 2022 (~2 months)</p>
 
-          <hr />
+          <hr style="margin-left:10%; margin-right:10%;"/>
 
-          <h3>Description</h3>
-          <p>
+          <h3 style="margin-left:10%; margin-right:10%;">Description</h3>
+          <p style="margin-left:10%; margin-right:10%;">
             The app requires every user to first login to the app in order to
             ensure security and privacy of data of every user. Any user can also
             directly sign up from the app and create their user account on the
             app, but this is not a feature on the Admin panel for security
             purposes. If any user uses a wrong password or email id, ‘wrong
-            credentials’ message is displayed. All users are authenticated by
-            the API using JWT (JSON Web Tokens).
+            credentials’ message is displayed. My contributions in this project
+            were as follows:
           </p>
+          <ul class="list" style="margin-left:10%; margin-right:10%;">
+            <li>Built schemas for the 'user' and 'task' database in MongoDB</li>
+            <li>Created REST APIs for create and delete tasks of users</li>
+            <li>Designed Home, About and Profile pages</li>
+          </ul>
 
           <h4 class="heading">User web app</h4>
 
-          <div class="bnb-img">
+          <div class="app-img">
             <figure>
               <img src="https://cdn.glitch.global/54b33cb5-ee5f-46e3-a712-78db1738ce50/ProfileNAbout.png?v=1678226389789" />
               <br />
@@ -247,12 +254,10 @@
               </figcaption>
             </figure>
           </div>
-
-          <br />
           
           <h4 class="heading">Admin panel</h4>
 
-          <div class="bnb-img">
+          <div class="app-img">
             <figure>
               <img
                 src="https://cdn.glitch.global/54b33cb5-ee5f-46e3-a712-78db1738ce50/admin_panel.png?v=1677130915704"
@@ -263,25 +268,24 @@
             </figure>
           </div>
           
-          <!-- TODO - Insert github link -->
           <div>
-            <h4>
-              Feel free to check out my code for the <a href="" target="_blank">API</a> and
-              the <a href="https://cdn.glitch.global/54b33cb5-ee5f-46e3-a712-78db1738ce50/task_db.png?v=1678509411401" 
-              target="_blank">task</a> and the <a href="https://cdn.glitch.global/54b33cb5-ee5f-46e3-a712-78db1738ce50/User_db.png?v=1678509582927" 
+            <h4 style="margin-left:10%; margin-right:10%;">
+              Feel free to check out my code for the <a href="https://github.com/nishpai94/react-todo-backend/tree/main/routes" target="_blank">API</a> and
+              the <a href="https://github.com/nishpai94/react-todo-backend/tree/main/barf" 
+              target="_blank">task</a> and the <a href="https://github.com/nishpai94/react-todo-backend/tree/main/barf" 
               target="_blank">user</a> databases.
             </h4> 
           </div>
 
-          <h3>Next Steps</h3>
-          <p>
+          <h3 style="margin-left:10%; margin-right:10%;">Next Steps</h3>
+          <p style="margin-left:10%; margin-right:10%;">
             My future goals for this project would be to add to the design and
             features. I would love to have this application follow a unique,
             cohesive design. The grading of this project was on functionality
             alone, so I did not spend a lot of time on the UI/UX. Regarding
             features:
           </p>
-          <ul class="list">
+          <ul class="list" style="margin-left:10%; margin-right:10%;">
             <li>
               Add-on features: On the User web app, I would like to add tasks
               filter based on category, priority and due-date. This will help
@@ -306,10 +310,11 @@
               admin being able to delete user accounts or reset passwords.
             </li>
           </ul>
+          </div>
         </div>
       </div>
     </div>
-    <footer class="c12">
+    <footer class="center12">
       <div class="social-media">
         <h3>
           <a href="mailto:nvp15@pitt.edu">EMAIL</a>
@@ -330,10 +335,10 @@
           >
         </h3>
       </div>
-      <p class="small-footer-text">
+      <p class="footer-text">
         Made with HTML, CSS and ❤️ by Nischita Pai
       </p>
-      <p class="small-footer-text">&copy; 2023</p>
+      <p class="footer-text">&copy; 2023</p>
     </footer>
     
     <!-- jQuery -->
