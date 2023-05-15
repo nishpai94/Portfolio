@@ -131,16 +131,16 @@ footer a {
 }
 
 .social-media h3 {
-      font-family: 'American Typewriter', serif;
-      font-size: 2.7rem;
-      font-weight: 600;
-      text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 #focus {
   padding: 20px;
-  font-family: 'American Typewriter', sans-serif;
-  font-size: 27px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
 }
 
 .highlight {
@@ -379,7 +379,7 @@ footer {
 .app-heading {
   font-size: 60px;
   color: #5a5a5a;
-  font-family: "Playfair Display", serif;
+  font-family: "PT Sans", sans-serif;
   text-align: center;
   font-weight: bold;
 }
@@ -405,7 +405,7 @@ footer {
 .text-start {
   font-size: 22px;
   color: #91625d;
-  font-family: 'American Typewriter', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .me-a {
@@ -439,7 +439,7 @@ footer {
 .skills-text {
   font-size: 22px;
   color: #91625d;
-  font-family: 'American Typewriter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-left: auto;
   margin-right: 30px;
 }
@@ -521,7 +521,7 @@ footer {
 footer p {
   margin-bottom: 0px;
   font-size: 15px;
-  font-family: 'American Typewriter', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .hover-effect-scale li p {
@@ -653,7 +653,7 @@ footer {
   margin-bottom: -20px;
   font-size: 1.8rem;
   font-weight: 550;
-  font-family: 'American Typewriter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   bottom: 0;
 }
@@ -1115,7 +1115,7 @@ grid-column: 3 / 11;
 }
 
 h3 {
-  font-family: 'American Typewriter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
